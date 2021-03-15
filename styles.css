@@ -1,33 +1,37 @@
-* {
-    box-sizing: border-box;
-  }
-  .item {
-    display: inline-block;
-  }
-  /* on PC */
-  @media screen and (min-width: 550px) {
-    .featured-image {
-      float: left;
-      width: 40%;
-      padding-right: 15px;
+@media (min-width: 768) {
+
+    .card {
+    
+      overflow: hidden;
+    
     }
-    .featured-image img {
+    
+    .row.text-over-image {
+    
+      width: 200%;
+    
+    }
+    
+    .text {
+    
+      transform: translateX(-100%);
+    
+    }
+    
+    .image a {
+    
+      height: 100%;
+    
+    }
+    
+    img {
+    
+      height: 100%;
+    
       width: 100%;
+    
+      object-fit: cover;
+    
     }
-    .description {
-      float: left;
-      width: 60%;
+    
     }
-  }
-  /* on Mobile */
-  @media screen and (max-width: 550px) {
-    .featured-image {
-      width: 100%;
-    }
-    .featured-image img {
-      width: 100%;
-    }
-    .description {
-      width: 100%;
-    }
-  }
